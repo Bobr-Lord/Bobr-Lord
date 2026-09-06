@@ -1,63 +1,84 @@
+# Алексей — Backend разработчик (Go)
 
-<h1 align="center">👋 Привет</h1>
+Backend разработчик с опытом разработки микросервисных систем на Go. Специализируюсь на конкурентном программировании, REST API и асинхронной обработке.
 
-<p align="center">
-  Junior Backend Developer (Go, Microservices, Kafka, Docker)
-</p>
+## 🎯 Ключевые навыки
 
----
+**Основной стек:**
+- Go (горутины, каналы, контекст, конкурентность)
+- PostgreSQL, Redis
+- Docker, Docker Compose
+- REST API, Clean Architecture
 
-## 📌 О себе
-
-Я занимаюсь разработкой backend-систем на языке Go с акцентом на микросервисную архитектуру, асинхронную обработку, очереди сообщений, работу с базами данных и масштабируемую архитектуру.
-
----
-
-## 🚀 Мой стек технологий
-
-- Языки программирования: **Go (Golang)**, **JavaScript (React)**
-- Базы данных: **PostgreSQL**, Redis
-- Асинхронная обработка: **Kafka**
-- Контейнеризация: **Docker, Docker Compose**
-- Архитектура: **REST API, Microservices, Clean Architecture**
-- Авторизация: **JWT**
-- Инструменты: Git, GitHub, GitLab CI
+**Паттерны и подходы:**
+- Worker pool, Fan-in/Fan-out, Producer-Consumer
+- Graceful shutdown, асинхронные операции
+- Race detector, performance profiling
+- git, GitHub, CI/CD
 
 ---
 
-## 📂 Мои проекты
+## 📦 Проекты
 
-### 📦 [Мессенджер на микросервисной архитектуре (Go, Kafka, WebSocket)](https://github.com/Bobr-Lord/messenger)
+### [Health Checker API](https://github.com/Bobr-Lord/Health-Checker-API) ⭐
+**Асинхронный HTTP сервис для конкурентной проверки доступности веб-ресурсов**
 
-> Полноценный мессенджер с использованием Kafka, WebSocket, микросервисной архитектуры и Docker.  
-> Реализована очередь сообщений, асинхронная доставка через Kafka, маршрутизация через WebSocket, хранение сессий через Redis, разделение бизнес-логики по сервисам.
-
-### 📦 [ToDo приложение (Go, PostgreSQL, Docker)](https://github.com/Bobr-Lord/todo_app)
-
-> REST API приложение для управления задачами.  
-> Поддерживает регистрацию пользователей, JWT авторизацию, работу со списками задач, хранение данных в PostgreSQL и развёртывание через Docker.
+**Технологии:** Go, chi, sync.RWMutex, context, goroutines, channels  
+**Ключевые компоненты:**
+- Worker pool на буферизованных каналах
+- In-memory task store с sync.RWMutex
+- REST API с context-based отменой (DELETE)
+- Graceful shutdown
+- 100% покрытие тестами с `-race` детектором
 
 ---
 
+### [Мессенджер на микросервисной архитектуре](https://github.com/Bobr-Lord/messenger)
+**WebSocket мессенджер с Kafka, Redis и микросервисами**
 
-### 📦 [React Go Shop (React, Go, PostgreSQL, Docker)](https://github.com/Bobr-Lord/react-go-shop)
+**Технологии:** Go, Kafka, WebSocket, Redis, Docker, REST API  
+**Особенности:**
+- Асинхронная обработка через Kafka
+- Real-time уведомления через WebSocket
+- Кэширование сессий в Redis
+- Микросервисная архитектура (Gateway, Auth, Message, Chat, User)
 
-> Полноценный интернет-магазин на фронтенде React и бэкенде на Go с разделением на два микросервиса (shop и auth).
-> Реализована регистрация и авторизация через JWT, корзина, каталог товаров, взаимодействие через REST API.
-> Запуск возможен как вручную, так и через `docker-compose`, есть nginx для маршрутизации.
+---
 
+### [ToDo приложение](https://github.com/Bobr-Lord/todo_app)
+**REST API с JWT авторизацией и PostgreSQL**
+
+**Технологии:** Go, PostgreSQL, Docker, JWT, Clean Architecture  
+**Особенности:**
+- Clean Architecture (handler → service → repository)
+- JWT авторизация
+- Database миграции
+- GitLab CI конфигурация
+
+---
+
+### [React Go Shop](https://github.com/Bobr-Lord/react-go-shop)
+**E-commerce с React фронтенда и двумя Go микросервисами**
+
+**Технологии:** React, Go (auth + shop сервисы), PostgreSQL, Docker, nginx, JWT  
+**Особенности:**
+- Два независимых Go сервиса (auth и shop)
+- JWT для межсервисного взаимодействия
+- nginx reverse proxy
+- Docker Compose для полного стека
+
+---
+
+## 🏆 Сертификации
+
+- **Яндекс.Практикум** — Сертификат по Go (горутины, каналы, микросервисная архитектура)
+
+![Сертификат по Go от Яндекса](./certificate.png)
+
+---
 
 ## 📬 Контакты
 
-- 📱 Telegram: [@bobr_lord](https://t.me/bobr_lord)
-
----
-
-## ⚡ Немного о моем пути
-
-Этот аккаунт — моё публичное портфолио.  
-Я активно изучаю backend-разработку, микросервисы, асинхронную архитектуру и стремлюсь развиваться как разработчик.
-
----
-
-<p align="center">Спасибо, что заглянули в мой профиль 🙌</p>
+- GitHub: [@Bobr-Lord](https://github.com/Bobr-Lord)
+- Telegram: [@bobr_lord](https://t.me/bobr_lord)
+- Email: alexeymol27@gmail.com
